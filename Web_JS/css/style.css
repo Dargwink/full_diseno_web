@@ -1,0 +1,102 @@
+:root
+{
+    --red:#ff2e63;
+    --back:#252a34;
+    --blue:#08d9d6;
+    --while:#eaeaea;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
+    background: #fff; 
+    overflow-x:hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+/** Menu Navegacion**/
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff; 
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+}
+.menu .logo-box{
+    margin-left: 20px;
+}
+.menu .logo-box h1 a{ 
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color:var(--back);
+}
+.menu .list-container{
+    margin-right: 20px;
+    padding: 20px;
+}
+.menu .list-container .lists{
+    display: flex;
+}
+.btn-menu > .fa-bars{
+    display: none;
+}
+.menu .list-container .lists li{
+    list-style: none;
+}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px;
+    color: var(--back); 
+    border-radius: 24px; 
+    font-size: 16px;
+    transition: 0.3s;
+}
+.menu .list-container .lists li a.activo{
+background: var(--red);
+color: #fff;
+}
+.menu .list-container .lists li a:hover{
+    background: var(--red);
+    color: #fff;
+}
+.btn-menu > .fa-bars{
+    display: none;
+}
+
+/** Fin Menu Navegacion**/
+
+/**IMG HEADER**/
+
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-header .welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+
